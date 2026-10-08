@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f4d917b83d14ec6adbd6f076cc8226e, type: 3}
+  m_Name: BossDemonMovementConfig
+  m_EditorClassIdentifier: BossFightDemo::BossMovementConfigData
+  speed: 4.5
+  acceleration: 8
+  walkSpeed: 2
+  walkDistance: 8
+  runHysteresis: 1
+  rotationSpeed: 270
+  rotationSmoothTime: 0.12
+  turnSpeedMultiplier: 1
+  turnExitAngle: 10
+  turnMaxTargetAdjustment: 35
+  maxDistanceMatchSpeed: 10
+  lineOfAttackObstacles:
+    serializedVersion: 2
+    m_Bits: 1025
+  closeInDistance: 3
+  strafeSpeed: 0.7
+  strafeMinDuration: 1.5
+  strafeMaxDuration: 3
+  combatPivotStartAngle: 110
+  combatPivotRearmAngle: 35
+  hitShoveDistance: 0.35
+  hitShoveMinPoiseDamage: 10
+  hitShoveFullPoiseDamage: 50
+  hitShoveDuration: 0.18
+  hitShoveHitPointBias: 0.5
+  speedByHeadingError:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: -0.04
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 30
+      value: 0.4
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4

@@ -1,0 +1,22 @@
+{
+    "name": "BossFightDemo.Editor",
+    "rootNamespace": "",
+    "references": [
+        "BossFightDemo",
+        "Unity.InputSystem",
+        "Kybernetik.Animancer",
+        "Unity.Cinemachine",
+        "Unity.Recorder.Editor"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

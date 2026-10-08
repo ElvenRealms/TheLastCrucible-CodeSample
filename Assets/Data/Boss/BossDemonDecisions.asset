@@ -1,0 +1,1664 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aec6bef8412ed214bab9b0174206ff39, type: 3}
+  m_Name: BossDemonDecisions
+  m_EditorClassIdentifier: BossFightDemo::BossOptionSet
+  options:
+  - name: Enrage
+    priority: 4
+    scoring:
+      weight: 1
+      conditions:
+      - rid: 2632327688094744663
+      - rid: 2632327688094744664
+      - rid: 2632327688094744665
+      considerations: []
+    action:
+      rid: 2632327688094744666
+  - name: Cleave1 into Cleave3
+    priority: 3
+    scoring:
+      weight: 0.8
+      conditions:
+      - rid: 2632327688094744667
+      - rid: 2632327688094744668
+      - rid: 2632327688094744669
+      - rid: 2632327688094744670
+      considerations:
+      - rid: 2632327688094744671
+      - rid: 2632327692863144035
+      - rid: 2632327692863144050
+    action:
+      rid: 2632327688094744672
+  - name: Cleave1 into Cleave3Delayed
+    priority: 3
+    scoring:
+      weight: 0.7
+      conditions:
+      - rid: 2632327688094744673
+      - rid: 2632327688094744674
+      - rid: 2632327688094744675
+      - rid: 2632327688094744676
+      considerations:
+      - rid: 2632327688094744677
+      - rid: 2632327692863144036
+      - rid: 2632327692863144037
+      - rid: 2632327692863144051
+    action:
+      rid: 2632327688094744678
+  - name: Rising1
+    priority: 3
+    scoring:
+      weight: 1
+      conditions:
+      - rid: 2632327688094744679
+      - rid: 2632327688094744680
+      - rid: 2632327688094744681
+      - rid: 2632327688094744682
+      considerations:
+      - rid: 2632327688094744683
+      - rid: 2632327688094744684
+      - rid: 2632327692863144038
+      - rid: 2632327692863144052
+    action:
+      rid: 2632327688094744685
+  - name: Overhead
+    priority: 3
+    scoring:
+      weight: 1
+      conditions:
+      - rid: 2632327688094744686
+      - rid: 2632327688094744687
+      - rid: 2632327688094744688
+      - rid: 2632327688094744689
+      considerations:
+      - rid: 2632327688094744690
+      - rid: 2632327692863144039
+      - rid: 2632327692863144053
+    action:
+      rid: 2632327688094744691
+  - name: OverheadDelayed
+    priority: 3
+    scoring:
+      weight: 0.7
+      conditions:
+      - rid: 2632327688094744692
+      - rid: 2632327688094744693
+      - rid: 2632327688094744694
+      - rid: 2632327688094744695
+      considerations:
+      - rid: 2632327688094744696
+      - rid: 2632327692863144040
+      - rid: 2632327692863144054
+    action:
+      rid: 2632327688094744697
+  - name: Lunge1
+    priority: 3
+    scoring:
+      weight: 1
+      conditions:
+      - rid: 2632327688094744698
+      - rid: 2632327688094744699
+      - rid: 2632327688094744700
+      - rid: 2632327688094744701
+      considerations:
+      - rid: 2632327688094744702
+      - rid: 2632327688094744703
+      - rid: 2632327692863144041
+      - rid: 2632327692863144055
+    action:
+      rid: 2632327688094744704
+  - name: Sweep
+    priority: 3
+    scoring:
+      weight: 1
+      conditions:
+      - rid: 2632327688094744705
+      - rid: 2632327688094744706
+      - rid: 2632327688094744707
+      - rid: 2632327688094744708
+      - rid: 2632327688094744709
+      considerations:
+      - rid: 2632327688094744710
+    action:
+      rid: 2632327688094744711
+  - name: Charge
+    priority: 3
+    scoring:
+      weight: 1
+      conditions:
+      - rid: 2632327688094744712
+      - rid: 2632327688094744713
+      - rid: 2632327688094744714
+      - rid: 2632327688094744715
+      considerations:
+      - rid: 2632327688094744716
+      - rid: 2632327688094744717
+    action:
+      rid: 2632327688094744718
+  - name: FireWave
+    priority: 3
+    scoring:
+      weight: 1
+      conditions:
+      - rid: 2632327688094744719
+      - rid: 2632327688094744720
+      - rid: 2632327688094744721
+      - rid: 2632327688094744722
+      - rid: 2632327688094744723
+      considerations:
+      - rid: 2632327688094744724
+      - rid: 2632327688094744725
+    action:
+      rid: 2632327688094744726
+  - name: Cleave1 into Cleave3 (Enraged)
+    priority: 3
+    scoring:
+      weight: 0.8
+      conditions:
+      - rid: 2632327688094744727
+      - rid: 2632327688094744728
+      - rid: 2632327688094744729
+      - rid: 2632327688094744730
+      considerations:
+      - rid: 2632327688094744731
+      - rid: 2632327692863144042
+    action:
+      rid: 2632327688094744732
+  - name: Cleave1 into Cleave3Delayed (Enraged)
+    priority: 3
+    scoring:
+      weight: 0.7
+      conditions:
+      - rid: 2632327688094744733
+      - rid: 2632327688094744734
+      - rid: 2632327688094744735
+      - rid: 2632327688094744736
+      considerations:
+      - rid: 2632327688094744737
+      - rid: 2632327692863144043
+      - rid: 2632327692863144044
+    action:
+      rid: 2632327688094744738
+  - name: Rising1 (Enraged)
+    priority: 3
+    scoring:
+      weight: 1
+      conditions:
+      - rid: 2632327688094744739
+      - rid: 2632327688094744740
+      - rid: 2632327688094744741
+      - rid: 2632327688094744742
+      considerations:
+      - rid: 2632327688094744743
+      - rid: 2632327692863144045
+    action:
+      rid: 2632327688094744744
+  - name: Overhead (Enraged)
+    priority: 3
+    scoring:
+      weight: 1
+      conditions:
+      - rid: 2632327688094744745
+      - rid: 2632327688094744746
+      - rid: 2632327688094744747
+      - rid: 2632327688094744748
+      considerations:
+      - rid: 2632327688094744749
+      - rid: 2632327692863144046
+    action:
+      rid: 2632327688094744750
+  - name: OverheadDelayed (Enraged)
+    priority: 3
+    scoring:
+      weight: 1
+      conditions:
+      - rid: 2632327688094744751
+      - rid: 2632327688094744752
+      - rid: 2632327688094744753
+      - rid: 2632327688094744754
+      considerations:
+      - rid: 2632327688094744755
+      - rid: 2632327692863144047
+    action:
+      rid: 2632327688094744756
+  - name: Lunge1 (Enraged)
+    priority: 3
+    scoring:
+      weight: 1
+      conditions:
+      - rid: 2632327688094744757
+      - rid: 2632327688094744758
+      - rid: 2632327688094744759
+      - rid: 2632327688094744760
+      considerations:
+      - rid: 2632327688094744761
+      - rid: 2632327688094744762
+      - rid: 2632327692863144048
+    action:
+      rid: 2632327688094744763
+  - name: Sweep (Enraged)
+    priority: 3
+    scoring:
+      weight: 1
+      conditions:
+      - rid: 2632327688094744764
+      - rid: 2632327688094744765
+      - rid: 2632327688094744766
+      - rid: 2632327688094744767
+      - rid: 2632327688094744768
+      considerations:
+      - rid: 2632327688094744769
+    action:
+      rid: 2632327688094744770
+  - name: Charge (Enraged)
+    priority: 3
+    scoring:
+      weight: 1
+      conditions:
+      - rid: 2632327688094744771
+      - rid: 2632327688094744772
+      - rid: 2632327688094744773
+      - rid: 2632327688094744774
+      considerations:
+      - rid: 2632327688094744775
+      - rid: 2632327688094744776
+    action:
+      rid: 2632327688094744777
+  - name: Crush (Enraged)
+    priority: 3
+    scoring:
+      weight: 1.2
+      conditions:
+      - rid: 2632327688094744778
+      - rid: 2632327688094744779
+      - rid: 2632327688094744780
+      - rid: 2632327688094744781
+      considerations:
+      - rid: 2632327688094744782
+    action:
+      rid: 2632327688094744783
+  - name: FireWaveEnraged (Enraged)
+    priority: 3
+    scoring:
+      weight: 1
+      conditions:
+      - rid: 2632327688094744784
+      - rid: 2632327688094744785
+      - rid: 2632327688094744786
+      - rid: 2632327688094744787
+      - rid: 2632327688094744788
+      considerations:
+      - rid: 2632327688094744789
+      - rid: 2632327688094744790
+    action:
+      rid: 2632327688094744791
+  - name: AreaBurstStart (Enraged)
+    priority: 3
+    scoring:
+      weight: 0.8
+      conditions:
+      - rid: 2632327688094744792
+      - rid: 2632327688094744793
+      - rid: 2632327688094744794
+      - rid: 2632327688094744795
+      - rid: 2632327688094744796
+      considerations:
+      - rid: 2632327688094744797
+      - rid: 2632327688094744798
+      - rid: 2632327692863144049
+    action:
+      rid: 2632327688094744799
+  - name: Combat Turn
+    priority: 2
+    scoring:
+      weight: 1
+      conditions:
+      - rid: 2632327688094744800
+      considerations: []
+    action:
+      rid: 2632327688094744801
+  - name: Strafe
+    priority: 1
+    scoring:
+      weight: 1
+      conditions:
+      - rid: 2632327688094744802
+      - rid: 2632327688094744803
+      considerations: []
+    action:
+      rid: 2632327688094744804
+  - name: Approach
+    priority: 1
+    scoring:
+      weight: 1
+      conditions:
+      - rid: 2632327688094744805
+      considerations: []
+    action:
+      rid: 2632327688094744806
+  - name: Hold
+    priority: 0
+    scoring:
+      weight: 1
+      conditions: []
+      considerations: []
+    action:
+      rid: 2632327688094744807
+  scoreCutoff: 0.35
+  pacing:
+    minimumAttackDelay: 0.5
+    maximumAttackDelay: 2
+    breatherChance: 0.15
+    minimumBreatherDelay: 3
+    maximumBreatherDelay: 5
+    chainChance: 0.25
+    maximumChainedAttacks: 1
+    minimumRetaliationHits: 3
+    maximumRetaliationHits: 5
+    retaliationWindow: 4
+    healReactionChance: 0.8
+    behindAngle: 100
+    retreatSpeed: 2.2
+  enragedPacing:
+    minimumAttackDelay: 0.3
+    maximumAttackDelay: 1.2
+    breatherChance: 0.05
+    minimumBreatherDelay: 3
+    maximumBreatherDelay: 5
+    chainChance: 0.45
+    maximumChainedAttacks: 2
+    minimumRetaliationHits: 2
+    maximumRetaliationHits: 4
+    retaliationWindow: 4
+    healReactionChance: 1
+    behindAngle: 100
+    retreatSpeed: 2.2
+  references:
+    version: 2
+    RefIds:
+    - rid: 2632327688094744663
+      type: {class: BossSituationCondition, ns: , asm: BossFightDemo}
+      data:
+        situation: 8
+        mustHold: 0
+    - rid: 2632327688094744664
+      type: {class: BossHealthCondition, ns: , asm: BossFightDemo}
+      data:
+        minimumFraction: 0
+        maximumFraction: 0.5
+    - rid: 2632327688094744665
+      type: {class: BossSituationCondition, ns: , asm: BossFightDemo}
+      data:
+        situation: 10
+        mustHold: 0
+    - rid: 2632327688094744666
+      type: {class: BossEnrageAction, ns: , asm: BossFightDemo}
+      data: 
+    - rid: 2632327688094744667
+      type: {class: BossSituationCondition, ns: , asm: BossFightDemo}
+      data:
+        situation: 8
+        mustHold: 0
+    - rid: 2632327688094744668
+      type: {class: BossSituationCondition, ns: , asm: BossFightDemo}
+      data:
+        situation: 9
+        mustHold: 1
+    - rid: 2632327688094744669
+      type: {class: BossRangeCondition, ns: , asm: BossFightDemo}
+      data:
+        minimum: 0
+        maximum: 4.4
+        reachedOnFoot: 1
+    - rid: 2632327688094744670
+      type: {class: BossFacingCondition, ns: , asm: BossFightDemo}
+      data:
+        maximumAngle: 45
+    - rid: 2632327688094744671
+      type: {class: BossRepeatConsideration, ns: , asm: BossFightDemo}
+      data:
+        multiplier: 0.1
+    - rid: 2632327688094744672
+      type: {class: BossAttackAction, ns: , asm: BossFightDemo}
+      data:
+        attack:
+          openingAttack: {fileID: 11400000, guid: a7ecb340cbbeeb74bb1c4bdbd65007c9, type: 2}
+          followUpAttacks:
+          - {fileID: 11400000, guid: c8683b73863d4b7429842d4b1a06bbcc, type: 2}
+          - {fileID: 11400000, guid: a2162b2ef09618644b19f82ac6a3a291, type: 2}
+          continueChance: 0.7
+          continueMaximumRange: 5
+          delayScale: 1
+          startChance: 1
+          passDuration: 3
+    - rid: 2632327688094744673
+      type: {class: BossSituationCondition, ns: , asm: BossFightDemo}
+      data:
+        situation: 8
+        mustHold: 0
+    - rid: 2632327688094744674
+      type: {class: BossSituationCondition, ns: , asm: BossFightDemo}
+      data:
+        situation: 9
+        mustHold: 1
+    - rid: 2632327688094744675
+      type: {class: BossRangeCondition, ns: , asm: BossFightDemo}
+      data:
+        minimum: 0
+        maximum: 4.4
+        reachedOnFoot: 1
+    - rid: 2632327688094744676
+      type: {class: BossFacingCondition, ns: , asm: BossFightDemo}
+      data:
+        maximumAngle: 45
+    - rid: 2632327688094744677
+      type: {class: BossRepeatConsideration, ns: , asm: BossFightDemo}
+      data:
+        multiplier: 0.1
+    - rid: 2632327688094744678
+      type: {class: BossAttackAction, ns: , asm: BossFightDemo}
+      data:
+        attack:
+          openingAttack: {fileID: 11400000, guid: a7ecb340cbbeeb74bb1c4bdbd65007c9, type: 2}
+          followUpAttacks:
+          - {fileID: 11400000, guid: c8683b73863d4b7429842d4b1a06bbcc, type: 2}
+          - {fileID: 11400000, guid: 38011846c1b25924f98ba68afa4041ff, type: 2}
+          continueChance: 0.7
+          continueMaximumRange: 5
+          delayScale: 1
+          startChance: 1
+          passDuration: 3
+    - rid: 2632327688094744679
+      type: {class: BossSituationCondition, ns: , asm: BossFightDemo}
+      data:
+        situation: 8
+        mustHold: 0
+    - rid: 2632327688094744680
+      type: {class: BossSituationCondition, ns: , asm: BossFightDemo}
+      data:
+        situation: 9
+        mustHold: 1
+    - rid: 2632327688094744681
+      type: {class: BossRangeCondition, ns: , asm: BossFightDemo}
+      data:
+        minimum: 0
+        maximum: 4.4
+        reachedOnFoot: 1
+    - rid: 2632327688094744682
+      type: {class: BossFacingCondition, ns: , asm: BossFightDemo}
+      data:
+        maximumAngle: 45
+    - rid: 2632327688094744683
+      type: {class: BossRepeatConsideration, ns: , asm: BossFightDemo}
+      data:
+        multiplier: 0.1
+    - rid: 2632327688094744684
+      type: {class: BossSituationConsideration, ns: , asm: BossFightDemo}
+      data:
+        situation: 4
+        multiplier: 3
+    - rid: 2632327688094744685
+      type: {class: BossAttackAction, ns: , asm: BossFightDemo}
+      data:
+        attack:
+          openingAttack: {fileID: 11400000, guid: de52b5b184ac62846bba602c3d643f77, type: 2}
+          followUpAttacks:
+          - {fileID: 11400000, guid: 5de94567f07bcaa4d8702b1c5f26fec8, type: 2}
+          continueChance: 0.65
+          continueMaximumRange: 5
+          delayScale: 0.8
+          startChance: 1
+          passDuration: 3
+    - rid: 2632327688094744686
+      type: {class: BossSituationCondition, ns: , asm: BossFightDemo}
+      data:
+        situation: 8
+        mustHold: 0
+    - rid: 2632327688094744687
+      type: {class: BossSituationCondition, ns: , asm: BossFightDemo}
+      data:
+        situation: 9
+        mustHold: 1
+    - rid: 2632327688094744688
+      type: {class: BossRangeCondition, ns: , asm: BossFightDemo}
+      data:
+        minimum: 0
+        maximum: 4.4
+        reachedOnFoot: 1
+    - rid: 2632327688094744689
+      type: {class: BossFacingCondition, ns: , asm: BossFightDemo}
+      data:
+        maximumAngle: 30
+    - rid: 2632327688094744690
+      type: {class: BossRepeatConsideration, ns: , asm: BossFightDemo}
+      data:
+        multiplier: 0.1
+    - rid: 2632327688094744691
+      type: {class: BossAttackAction, ns: , asm: BossFightDemo}
+      data:
+        attack:
+          openingAttack: {fileID: 11400000, guid: 6de412cca5f8ab64487b1833873210f4, type: 2}
+          followUpAttacks: []
+          continueChance: 1
+          continueMaximumRange: 0
+          delayScale: 1.3
+          startChance: 1
+          passDuration: 3
+    - rid: 2632327688094744692
+      type: {class: BossSituationCondition, ns: , asm: BossFightDemo}
+      data:
+        situation: 8
+        mustHold: 0
+    - rid: 2632327688094744693
+      type: {class: BossSituationCondition, ns: , asm: BossFightDemo}
+      data:
+        situation: 9
+        mustHold: 1
+    - rid: 2632327688094744694
+      type: {class: BossRangeCondition, ns: , asm: BossFightDemo}
+      data:
+        minimum: 0
+        maximum: 4.4
+        reachedOnFoot: 1
+    - rid: 2632327688094744695
+      type: {class: BossFacingCondition, ns: , asm: BossFightDemo}
+      data:
+        maximumAngle: 30
+    - rid: 2632327688094744696
+      type: {class: BossRepeatConsideration, ns: , asm: BossFightDemo}
+      data:
+        multiplier: 0.1
+    - rid: 2632327688094744697
+      type: {class: BossAttackAction, ns: , asm: BossFightDemo}
+      data:
+        attack:
+          openingAttack: {fileID: 11400000, guid: ff67af104de5a7a4eba35fe0dd24c4ec, type: 2}
+          followUpAttacks: []
+          continueChance: 1
+          continueMaximumRange: 0
+          delayScale: 1.3
+          startChance: 1
+          passDuration: 3
+    - rid: 2632327688094744698
+      type: {class: BossSituationCondition, ns: , asm: BossFightDemo}
+      data:
+        situation: 8
+        mustHold: 0
+    - rid: 2632327688094744699
+      type: {class: BossSituationCondition, ns: , asm: BossFightDemo}
+      data:
+        situation: 9
+        mustHold: 1
+    - rid: 2632327688094744700
+      type: {class: BossRangeCondition, ns: , asm: BossFightDemo}
+      data:
+        minimum: 2
+        maximum: 5.5
+        reachedOnFoot: 1
+    - rid: 2632327688094744701
+      type: {class: BossFacingCondition, ns: , asm: BossFightDemo}
+      data:
+        maximumAngle: 20
+    - rid: 2632327688094744702
+      type: {class: BossRepeatConsideration, ns: , asm: BossFightDemo}
+      data:
+        multiplier: 0.1
+    - rid: 2632327688094744703
+      type: {class: BossSituationConsideration, ns: , asm: BossFightDemo}
+      data:
+        situation: 3
+        multiplier: 3
+    - rid: 2632327688094744704
+      type: {class: BossAttackAction, ns: , asm: BossFightDemo}
+      data:
+        attack:
+          openingAttack: {fileID: 11400000, guid: 0b475f2766b7f454f9e2fa7af1aa2100, type: 2}
+          followUpAttacks:
+          - {fileID: 11400000, guid: 5fabb2fa981c6dc4598a5ed4a7f77770, type: 2}
+          continueChance: 0.6
+          continueMaximumRange: 5
+          delayScale: 1
+          startChance: 1
+          passDuration: 3
+    - rid: 2632327688094744705
+      type: {class: BossSituationCondition, ns: , asm: BossFightDemo}
+      data:
+        situation: 8
+        mustHold: 0
+    - rid: 2632327688094744706
+      type: {class: BossSituationCondition, ns: , asm: BossFightDemo}
+      data:
+        situation: 9
+        mustHold: 1
+    - rid: 2632327688094744707
+      type: {class: BossRangeCondition, ns: , asm: BossFightDemo}
+      data:
+        minimum: 0
+        maximum: 3.2
+        reachedOnFoot: 1
+    - rid: 2632327688094744708
+      type: {class: BossFacingCondition, ns: , asm: BossFightDemo}
+      data:
+        maximumAngle: 180
+    - rid: 2632327688094744709
+      type: {class: BossSituationCondition, ns: , asm: BossFightDemo}
+      data:
+        situation: 2
+        mustHold: 1
+    - rid: 2632327688094744710
+      type: {class: BossRepeatConsideration, ns: , asm: BossFightDemo}
+      data:
+        multiplier: 0.1
+    - rid: 2632327688094744711
+      type: {class: BossAttackAction, ns: , asm: BossFightDemo}
+      data:
+        attack:
+          openingAttack: {fileID: 11400000, guid: 1d3fa867fbc81244f8bda26e5cc1a554, type: 2}
+          followUpAttacks: []
+          continueChance: 1
+          continueMaximumRange: 0
+          delayScale: 1
+          startChance: 1
+          passDuration: 3
+    - rid: 2632327688094744712
+      type: {class: BossSituationCondition, ns: , asm: BossFightDemo}
+      data:
+        situation: 8
+        mustHold: 0
+    - rid: 2632327688094744713
+      type: {class: BossSituationCondition, ns: , asm: BossFightDemo}
+      data:
+        situation: 9
+        mustHold: 1
+    - rid: 2632327688094744714
+      type: {class: BossRangeCondition, ns: , asm: BossFightDemo}
+      data:
+        minimum: 4.5
+        maximum: 7
+        reachedOnFoot: 1
+    - rid: 2632327688094744715
+      type: {class: BossFacingCondition, ns: , asm: BossFightDemo}
+      data:
+        maximumAngle: 25
+    - rid: 2632327688094744716
+      type: {class: BossRepeatConsideration, ns: , asm: BossFightDemo}
+      data:
+        multiplier: 0.1
+    - rid: 2632327688094744717
+      type: {class: BossSituationConsideration, ns: , asm: BossFightDemo}
+      data:
+        situation: 1
+        multiplier: 4
+    - rid: 2632327688094744718
+      type: {class: BossAttackAction, ns: , asm: BossFightDemo}
+      data:
+        attack:
+          openingAttack: {fileID: 11400000, guid: c1d960ac002c9394bb5ca167fdf4dcf3, type: 2}
+          followUpAttacks: []
+          continueChance: 1
+          continueMaximumRange: 0
+          delayScale: 1
+          startChance: 1
+          passDuration: 3
+    - rid: 2632327688094744719
+      type: {class: BossSituationCondition, ns: , asm: BossFightDemo}
+      data:
+        situation: 8
+        mustHold: 0
+    - rid: 2632327688094744720
+      type: {class: BossSituationCondition, ns: , asm: BossFightDemo}
+      data:
+        situation: 9
+        mustHold: 1
+    - rid: 2632327688094744721
+      type: {class: BossRangeCondition, ns: , asm: BossFightDemo}
+      data:
+        minimum: 6
+        maximum: 18
+        reachedOnFoot: 0
+    - rid: 2632327688094744722
+      type: {class: BossFacingCondition, ns: , asm: BossFightDemo}
+      data:
+        maximumAngle: 20
+    - rid: 2632327688094744723
+      type: {class: BossCooldownCondition, ns: , asm: BossFightDemo}
+      data:
+        seconds: 12
+    - rid: 2632327688094744724
+      type: {class: BossRepeatConsideration, ns: , asm: BossFightDemo}
+      data:
+        multiplier: 0.1
+    - rid: 2632327688094744725
+      type: {class: BossSituationConsideration, ns: , asm: BossFightDemo}
+      data:
+        situation: 1
+        multiplier: 3
+    - rid: 2632327688094744726
+      type: {class: BossAttackAction, ns: , asm: BossFightDemo}
+      data:
+        attack:
+          openingAttack: {fileID: 11400000, guid: 6f2dd2213e515d4479eac5f38cc03183, type: 2}
+          followUpAttacks: []
+          continueChance: 1
+          continueMaximumRange: 0
+          delayScale: 1.2
+          startChance: 0.6
+          passDuration: 3
+    - rid: 2632327688094744727
+      type: {class: BossSituationCondition, ns: , asm: BossFightDemo}
+      data:
+        situation: 8
+        mustHold: 1
+    - rid: 2632327688094744728
+      type: {class: BossSituationCondition, ns: , asm: BossFightDemo}
+      data:
+        situation: 9
+        mustHold: 1
+    - rid: 2632327688094744729
+      type: {class: BossRangeCondition, ns: , asm: BossFightDemo}
+      data:
+        minimum: 0
+        maximum: 3.8
+        reachedOnFoot: 1
+    - rid: 2632327688094744730
+      type: {class: BossFacingCondition, ns: , asm: BossFightDemo}
+      data:
+        maximumAngle: 45
+    - rid: 2632327688094744731
+      type: {class: BossRepeatConsideration, ns: , asm: BossFightDemo}
+      data:
+        multiplier: 0.1
+    - rid: 2632327688094744732
+      type: {class: BossAttackAction, ns: , asm: BossFightDemo}
+      data:
+        attack:
+          openingAttack: {fileID: 11400000, guid: a7ecb340cbbeeb74bb1c4bdbd65007c9, type: 2}
+          followUpAttacks:
+          - {fileID: 11400000, guid: c8683b73863d4b7429842d4b1a06bbcc, type: 2}
+          - {fileID: 11400000, guid: a2162b2ef09618644b19f82ac6a3a291, type: 2}
+          continueChance: 0.9
+          continueMaximumRange: 5
+          delayScale: 1
+          startChance: 1
+          passDuration: 3
+    - rid: 2632327688094744733
+      type: {class: BossSituationCondition, ns: , asm: BossFightDemo}
+      data:
+        situation: 8
+        mustHold: 1
+    - rid: 2632327688094744734
+      type: {class: BossSituationCondition, ns: , asm: BossFightDemo}
+      data:
+        situation: 9
+        mustHold: 1
+    - rid: 2632327688094744735
+      type: {class: BossRangeCondition, ns: , asm: BossFightDemo}
+      data:
+        minimum: 0
+        maximum: 3.8
+        reachedOnFoot: 1
+    - rid: 2632327688094744736
+      type: {class: BossFacingCondition, ns: , asm: BossFightDemo}
+      data:
+        maximumAngle: 45
+    - rid: 2632327688094744737
+      type: {class: BossRepeatConsideration, ns: , asm: BossFightDemo}
+      data:
+        multiplier: 0.1
+    - rid: 2632327688094744738
+      type: {class: BossAttackAction, ns: , asm: BossFightDemo}
+      data:
+        attack:
+          openingAttack: {fileID: 11400000, guid: a7ecb340cbbeeb74bb1c4bdbd65007c9, type: 2}
+          followUpAttacks:
+          - {fileID: 11400000, guid: c8683b73863d4b7429842d4b1a06bbcc, type: 2}
+          - {fileID: 11400000, guid: 38011846c1b25924f98ba68afa4041ff, type: 2}
+          continueChance: 0.9
+          continueMaximumRange: 5
+          delayScale: 1
+          startChance: 1
+          passDuration: 3
+    - rid: 2632327688094744739
+      type: {class: BossSituationCondition, ns: , asm: BossFightDemo}
+      data:
+        situation: 8
+        mustHold: 1
+    - rid: 2632327688094744740
+      type: {class: BossSituationCondition, ns: , asm: BossFightDemo}
+      data:
+        situation: 9
+        mustHold: 1
+    - rid: 2632327688094744741
+      type: {class: BossRangeCondition, ns: , asm: BossFightDemo}
+      data:
+        minimum: 0
+        maximum: 3.8
+        reachedOnFoot: 1
+    - rid: 2632327688094744742
+      type: {class: BossFacingCondition, ns: , asm: BossFightDemo}
+      data:
+        maximumAngle: 45
+    - rid: 2632327688094744743
+      type: {class: BossRepeatConsideration, ns: , asm: BossFightDemo}
+      data:
+        multiplier: 0.1
+    - rid: 2632327688094744744
+      type: {class: BossAttackAction, ns: , asm: BossFightDemo}
+      data:
+        attack:
+          openingAttack: {fileID: 11400000, guid: de52b5b184ac62846bba602c3d643f77, type: 2}
+          followUpAttacks:
+          - {fileID: 11400000, guid: 5de94567f07bcaa4d8702b1c5f26fec8, type: 2}
+          continueChance: 0.9
+          continueMaximumRange: 5
+          delayScale: 0.8
+          startChance: 1
+          passDuration: 3
+    - rid: 2632327688094744745
+      type: {class: BossSituationCondition, ns: , asm: BossFightDemo}
+      data:
+        situation: 8
+        mustHold: 1
+    - rid: 2632327688094744746
+      type: {class: BossSituationCondition, ns: , asm: BossFightDemo}
+      data:
+        situation: 9
+        mustHold: 1
+    - rid: 2632327688094744747
+      type: {class: BossRangeCondition, ns: , asm: BossFightDemo}
+      data:
+        minimum: 0
+        maximum: 3.6
+        reachedOnFoot: 1
+    - rid: 2632327688094744748
+      type: {class: BossFacingCondition, ns: , asm: BossFightDemo}
+      data:
+        maximumAngle: 30
+    - rid: 2632327688094744749
+      type: {class: BossRepeatConsideration, ns: , asm: BossFightDemo}
+      data:
+        multiplier: 0.1
+    - rid: 2632327688094744750
+      type: {class: BossAttackAction, ns: , asm: BossFightDemo}
+      data:
+        attack:
+          openingAttack: {fileID: 11400000, guid: 6de412cca5f8ab64487b1833873210f4, type: 2}
+          followUpAttacks: []
+          continueChance: 1
+          continueMaximumRange: 0
+          delayScale: 1.3
+          startChance: 1
+          passDuration: 3
+    - rid: 2632327688094744751
+      type: {class: BossSituationCondition, ns: , asm: BossFightDemo}
+      data:
+        situation: 8
+        mustHold: 1
+    - rid: 2632327688094744752
+      type: {class: BossSituationCondition, ns: , asm: BossFightDemo}
+      data:
+        situation: 9
+        mustHold: 1
+    - rid: 2632327688094744753
+      type: {class: BossRangeCondition, ns: , asm: BossFightDemo}
+      data:
+        minimum: 0
+        maximum: 3.6
+        reachedOnFoot: 1
+    - rid: 2632327688094744754
+      type: {class: BossFacingCondition, ns: , asm: BossFightDemo}
+      data:
+        maximumAngle: 30
+    - rid: 2632327688094744755
+      type: {class: BossRepeatConsideration, ns: , asm: BossFightDemo}
+      data:
+        multiplier: 0.1
+    - rid: 2632327688094744756
+      type: {class: BossAttackAction, ns: , asm: BossFightDemo}
+      data:
+        attack:
+          openingAttack: {fileID: 11400000, guid: ff67af104de5a7a4eba35fe0dd24c4ec, type: 2}
+          followUpAttacks: []
+          continueChance: 1
+          continueMaximumRange: 0
+          delayScale: 1.3
+          startChance: 1
+          passDuration: 3
+    - rid: 2632327688094744757
+      type: {class: BossSituationCondition, ns: , asm: BossFightDemo}
+      data:
+        situation: 8
+        mustHold: 1
+    - rid: 2632327688094744758
+      type: {class: BossSituationCondition, ns: , asm: BossFightDemo}
+      data:
+        situation: 9
+        mustHold: 1
+    - rid: 2632327688094744759
+      type: {class: BossRangeCondition, ns: , asm: BossFightDemo}
+      data:
+        minimum: 2
+        maximum: 3.8
+        reachedOnFoot: 1
+    - rid: 2632327688094744760
+      type: {class: BossFacingCondition, ns: , asm: BossFightDemo}
+      data:
+        maximumAngle: 20
+    - rid: 2632327688094744761
+      type: {class: BossRepeatConsideration, ns: , asm: BossFightDemo}
+      data:
+        multiplier: 0.1
+    - rid: 2632327688094744762
+      type: {class: BossSituationConsideration, ns: , asm: BossFightDemo}
+      data:
+        situation: 3
+        multiplier: 3
+    - rid: 2632327688094744763
+      type: {class: BossAttackAction, ns: , asm: BossFightDemo}
+      data:
+        attack:
+          openingAttack: {fileID: 11400000, guid: 0b475f2766b7f454f9e2fa7af1aa2100, type: 2}
+          followUpAttacks:
+          - {fileID: 11400000, guid: 5fabb2fa981c6dc4598a5ed4a7f77770, type: 2}
+          continueChance: 0.85
+          continueMaximumRange: 5
+          delayScale: 1
+          startChance: 1
+          passDuration: 3
+    - rid: 2632327688094744764
+      type: {class: BossSituationCondition, ns: , asm: BossFightDemo}
+      data:
+        situation: 8
+        mustHold: 1
+    - rid: 2632327688094744765
+      type: {class: BossSituationCondition, ns: , asm: BossFightDemo}
+      data:
+        situation: 9
+        mustHold: 1
+    - rid: 2632327688094744766
+      type: {class: BossRangeCondition, ns: , asm: BossFightDemo}
+      data:
+        minimum: 0
+        maximum: 3.2
+        reachedOnFoot: 1
+    - rid: 2632327688094744767
+      type: {class: BossFacingCondition, ns: , asm: BossFightDemo}
+      data:
+        maximumAngle: 180
+    - rid: 2632327688094744768
+      type: {class: BossSituationCondition, ns: , asm: BossFightDemo}
+      data:
+        situation: 2
+        mustHold: 1
+    - rid: 2632327688094744769
+      type: {class: BossRepeatConsideration, ns: , asm: BossFightDemo}
+      data:
+        multiplier: 0.1
+    - rid: 2632327688094744770
+      type: {class: BossAttackAction, ns: , asm: BossFightDemo}
+      data:
+        attack:
+          openingAttack: {fileID: 11400000, guid: 1d3fa867fbc81244f8bda26e5cc1a554, type: 2}
+          followUpAttacks: []
+          continueChance: 1
+          continueMaximumRange: 0
+          delayScale: 1
+          startChance: 1
+          passDuration: 3
+    - rid: 2632327688094744771
+      type: {class: BossSituationCondition, ns: , asm: BossFightDemo}
+      data:
+        situation: 8
+        mustHold: 1
+    - rid: 2632327688094744772
+      type: {class: BossSituationCondition, ns: , asm: BossFightDemo}
+      data:
+        situation: 9
+        mustHold: 1
+    - rid: 2632327688094744773
+      type: {class: BossRangeCondition, ns: , asm: BossFightDemo}
+      data:
+        minimum: 3.8
+        maximum: 6
+        reachedOnFoot: 1
+    - rid: 2632327688094744774
+      type: {class: BossFacingCondition, ns: , asm: BossFightDemo}
+      data:
+        maximumAngle: 25
+    - rid: 2632327688094744775
+      type: {class: BossRepeatConsideration, ns: , asm: BossFightDemo}
+      data:
+        multiplier: 0.1
+    - rid: 2632327688094744776
+      type: {class: BossSituationConsideration, ns: , asm: BossFightDemo}
+      data:
+        situation: 1
+        multiplier: 4
+    - rid: 2632327688094744777
+      type: {class: BossAttackAction, ns: , asm: BossFightDemo}
+      data:
+        attack:
+          openingAttack: {fileID: 11400000, guid: c1d960ac002c9394bb5ca167fdf4dcf3, type: 2}
+          followUpAttacks: []
+          continueChance: 1
+          continueMaximumRange: 0
+          delayScale: 1
+          startChance: 1
+          passDuration: 3
+    - rid: 2632327688094744778
+      type: {class: BossSituationCondition, ns: , asm: BossFightDemo}
+      data:
+        situation: 8
+        mustHold: 1
+    - rid: 2632327688094744779
+      type: {class: BossSituationCondition, ns: , asm: BossFightDemo}
+      data:
+        situation: 9
+        mustHold: 1
+    - rid: 2632327688094744780
+      type: {class: BossRangeCondition, ns: , asm: BossFightDemo}
+      data:
+        minimum: 0
+        maximum: 3.4
+        reachedOnFoot: 1
+    - rid: 2632327688094744781
+      type: {class: BossFacingCondition, ns: , asm: BossFightDemo}
+      data:
+        maximumAngle: 40
+    - rid: 2632327688094744782
+      type: {class: BossRepeatConsideration, ns: , asm: BossFightDemo}
+      data:
+        multiplier: 0.1
+    - rid: 2632327688094744783
+      type: {class: BossAttackAction, ns: , asm: BossFightDemo}
+      data:
+        attack:
+          openingAttack: {fileID: 11400000, guid: 65cd983e5eba53b4599facde8d9c67df, type: 2}
+          followUpAttacks: []
+          continueChance: 0.85
+          continueMaximumRange: 5
+          delayScale: 1.2
+          startChance: 1
+          passDuration: 3
+    - rid: 2632327688094744784
+      type: {class: BossSituationCondition, ns: , asm: BossFightDemo}
+      data:
+        situation: 8
+        mustHold: 1
+    - rid: 2632327688094744785
+      type: {class: BossSituationCondition, ns: , asm: BossFightDemo}
+      data:
+        situation: 9
+        mustHold: 1
+    - rid: 2632327688094744786
+      type: {class: BossRangeCondition, ns: , asm: BossFightDemo}
+      data:
+        minimum: 6
+        maximum: 18
+        reachedOnFoot: 0
+    - rid: 2632327688094744787
+      type: {class: BossFacingCondition, ns: , asm: BossFightDemo}
+      data:
+        maximumAngle: 20
+    - rid: 2632327688094744788
+      type: {class: BossCooldownCondition, ns: , asm: BossFightDemo}
+      data:
+        seconds: 9
+    - rid: 2632327688094744789
+      type: {class: BossRepeatConsideration, ns: , asm: BossFightDemo}
+      data:
+        multiplier: 0.1
+    - rid: 2632327688094744790
+      type: {class: BossSituationConsideration, ns: , asm: BossFightDemo}
+      data:
+        situation: 1
+        multiplier: 3
+    - rid: 2632327688094744791
+      type: {class: BossAttackAction, ns: , asm: BossFightDemo}
+      data:
+        attack:
+          openingAttack: {fileID: 11400000, guid: eb81ad5184c67d24aabd0fd317583ae4, type: 2}
+          followUpAttacks: []
+          continueChance: 1
+          continueMaximumRange: 0
+          delayScale: 1.2
+          startChance: 0.75
+          passDuration: 3
+    - rid: 2632327688094744792
+      type: {class: BossSituationCondition, ns: , asm: BossFightDemo}
+      data:
+        situation: 8
+        mustHold: 1
+    - rid: 2632327688094744793
+      type: {class: BossSituationCondition, ns: , asm: BossFightDemo}
+      data:
+        situation: 9
+        mustHold: 1
+    - rid: 2632327688094744794
+      type: {class: BossRangeCondition, ns: , asm: BossFightDemo}
+      data:
+        minimum: 0
+        maximum: 4.5
+        reachedOnFoot: 1
+    - rid: 2632327688094744795
+      type: {class: BossFacingCondition, ns: , asm: BossFightDemo}
+      data:
+        maximumAngle: 180
+    - rid: 2632327688094744796
+      type: {class: BossCooldownCondition, ns: , asm: BossFightDemo}
+      data:
+        seconds: 10
+    - rid: 2632327688094744797
+      type: {class: BossRepeatConsideration, ns: , asm: BossFightDemo}
+      data:
+        multiplier: 0.1
+    - rid: 2632327688094744798
+      type: {class: BossSituationConsideration, ns: , asm: BossFightDemo}
+      data:
+        situation: 4
+        multiplier: 4
+    - rid: 2632327688094744799
+      type: {class: BossAttackAction, ns: , asm: BossFightDemo}
+      data:
+        attack:
+          openingAttack: {fileID: 11400000, guid: f1d017e5ca51b3b469f92cf41e217062, type: 2}
+          followUpAttacks:
+          - {fileID: 11400000, guid: 34e861efe06a3ab4597cb03bcd11f775, type: 2}
+          - {fileID: 11400000, guid: 1f293dd6d6be25044a30e918e7455d0e, type: 2}
+          continueChance: 1
+          continueMaximumRange: 0
+          delayScale: 1.3
+          startChance: 1
+          passDuration: 3
+    - rid: 2632327688094744800
+      type: {class: BossSituationCondition, ns: , asm: BossFightDemo}
+      data:
+        situation: 5
+        mustHold: 1
+    - rid: 2632327688094744801
+      type: {class: BossCombatTurnAction, ns: , asm: BossFightDemo}
+      data: 
+    - rid: 2632327688094744802
+      type: {class: BossSituationCondition, ns: , asm: BossFightDemo}
+      data:
+        situation: 6
+        mustHold: 1
+    - rid: 2632327688094744803
+      type: {class: BossSituationCondition, ns: , asm: BossFightDemo}
+      data:
+        situation: 7
+        mustHold: 1
+    - rid: 2632327688094744804
+      type: {class: BossStrafeAction, ns: , asm: BossFightDemo}
+      data: 
+    - rid: 2632327688094744805
+      type: {class: BossSituationCondition, ns: , asm: BossFightDemo}
+      data:
+        situation: 6
+        mustHold: 0
+    - rid: 2632327688094744806
+      type: {class: BossApproachAction, ns: , asm: BossFightDemo}
+      data: 
+    - rid: 2632327688094744807
+      type: {class: BossHoldAction, ns: , asm: BossFightDemo}
+      data: 
+    - rid: 2632327692863144035
+      type: {class: BossCurveConsideration, ns: , asm: BossFightDemo}
+      data:
+        input: 1
+        multiplier:
+          serializedVersion: 2
+          m_Curve:
+          - serializedVersion: 3
+            time: 20
+            value: 1
+            inSlope: 0
+            outSlope: 0.15
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          - serializedVersion: 3
+            time: 40
+            value: 4
+            inSlope: 0.15
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+    - rid: 2632327692863144036
+      type: {class: BossCurveConsideration, ns: , asm: BossFightDemo}
+      data:
+        input: 1
+        multiplier:
+          serializedVersion: 2
+          m_Curve:
+          - serializedVersion: 3
+            time: 20
+            value: 1
+            inSlope: 0
+            outSlope: 0.15
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          - serializedVersion: 3
+            time: 40
+            value: 4
+            inSlope: 0.15
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+    - rid: 2632327692863144037
+      type: {class: BossSituationConsideration, ns: , asm: BossFightDemo}
+      data:
+        situation: 11
+        multiplier: 2
+    - rid: 2632327692863144038
+      type: {class: BossCurveConsideration, ns: , asm: BossFightDemo}
+      data:
+        input: 0
+        multiplier:
+          serializedVersion: 2
+          m_Curve:
+          - serializedVersion: 3
+            time: 1.5
+            value: 4
+            inSlope: 0
+            outSlope: -3
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          - serializedVersion: 3
+            time: 2.5
+            value: 1
+            inSlope: -3
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+    - rid: 2632327692863144039
+      type: {class: BossSituationConsideration, ns: , asm: BossFightDemo}
+      data:
+        situation: 13
+        multiplier: 3
+    - rid: 2632327692863144040
+      type: {class: BossSituationConsideration, ns: , asm: BossFightDemo}
+      data:
+        situation: 11
+        multiplier: 2
+    - rid: 2632327692863144041
+      type: {class: BossCurveConsideration, ns: , asm: BossFightDemo}
+      data:
+        input: 0
+        multiplier:
+          serializedVersion: 2
+          m_Curve:
+          - serializedVersion: 3
+            time: 3.1
+            value: 1
+            inSlope: 0
+            outSlope: 7.499998
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          - serializedVersion: 3
+            time: 3.5
+            value: 4
+            inSlope: 7.499998
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+    - rid: 2632327692863144042
+      type: {class: BossCurveConsideration, ns: , asm: BossFightDemo}
+      data:
+        input: 1
+        multiplier:
+          serializedVersion: 2
+          m_Curve:
+          - serializedVersion: 3
+            time: 20
+            value: 1
+            inSlope: 0
+            outSlope: 0.15
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          - serializedVersion: 3
+            time: 40
+            value: 4
+            inSlope: 0.15
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+    - rid: 2632327692863144043
+      type: {class: BossCurveConsideration, ns: , asm: BossFightDemo}
+      data:
+        input: 1
+        multiplier:
+          serializedVersion: 2
+          m_Curve:
+          - serializedVersion: 3
+            time: 20
+            value: 1
+            inSlope: 0
+            outSlope: 0.15
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          - serializedVersion: 3
+            time: 40
+            value: 4
+            inSlope: 0.15
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+    - rid: 2632327692863144044
+      type: {class: BossSituationConsideration, ns: , asm: BossFightDemo}
+      data:
+        situation: 11
+        multiplier: 2
+    - rid: 2632327692863144045
+      type: {class: BossCurveConsideration, ns: , asm: BossFightDemo}
+      data:
+        input: 0
+        multiplier:
+          serializedVersion: 2
+          m_Curve:
+          - serializedVersion: 3
+            time: 1.5
+            value: 4
+            inSlope: 0
+            outSlope: -3
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          - serializedVersion: 3
+            time: 2.5
+            value: 1
+            inSlope: -3
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+    - rid: 2632327692863144046
+      type: {class: BossSituationConsideration, ns: , asm: BossFightDemo}
+      data:
+        situation: 13
+        multiplier: 3
+    - rid: 2632327692863144047
+      type: {class: BossSituationConsideration, ns: , asm: BossFightDemo}
+      data:
+        situation: 11
+        multiplier: 2
+    - rid: 2632327692863144048
+      type: {class: BossCurveConsideration, ns: , asm: BossFightDemo}
+      data:
+        input: 0
+        multiplier:
+          serializedVersion: 2
+          m_Curve:
+          - serializedVersion: 3
+            time: 3.1
+            value: 1
+            inSlope: 0
+            outSlope: 7.499998
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          - serializedVersion: 3
+            time: 3.5
+            value: 4
+            inSlope: 7.499998
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+    - rid: 2632327692863144049
+      type: {class: BossCurveConsideration, ns: , asm: BossFightDemo}
+      data:
+        input: 2
+        multiplier:
+          serializedVersion: 2
+          m_Curve:
+          - serializedVersion: 3
+            time: 0.1
+            value: 2.5
+            inSlope: 0
+            outSlope: -3.75
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          - serializedVersion: 3
+            time: 0.5
+            value: 1
+            inSlope: -3.75
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+    - rid: 2632327692863144050
+      type: {class: BossCurveConsideration, ns: , asm: BossFightDemo}
+      data:
+        input: 3
+        multiplier:
+          serializedVersion: 2
+          m_Curve:
+          - serializedVersion: 3
+            time: 6
+            value: 0.35
+            inSlope: 0
+            outSlope: 0.054166663
+            tangentMode: 69
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          - serializedVersion: 3
+            time: 18
+            value: 1
+            inSlope: 0.054166663
+            outSlope: 0
+            tangentMode: 69
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+    - rid: 2632327692863144051
+      type: {class: BossCurveConsideration, ns: , asm: BossFightDemo}
+      data:
+        input: 3
+        multiplier:
+          serializedVersion: 2
+          m_Curve:
+          - serializedVersion: 3
+            time: 6
+            value: 0.35
+            inSlope: 0
+            outSlope: 0.054166663
+            tangentMode: 69
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          - serializedVersion: 3
+            time: 18
+            value: 1
+            inSlope: 0.054166663
+            outSlope: 0
+            tangentMode: 69
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+    - rid: 2632327692863144052
+      type: {class: BossCurveConsideration, ns: , asm: BossFightDemo}
+      data:
+        input: 3
+        multiplier:
+          serializedVersion: 2
+          m_Curve:
+          - serializedVersion: 3
+            time: 6
+            value: 0.35
+            inSlope: 0
+            outSlope: 0.054166663
+            tangentMode: 69
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          - serializedVersion: 3
+            time: 18
+            value: 1
+            inSlope: 0.054166663
+            outSlope: 0
+            tangentMode: 69
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+    - rid: 2632327692863144053
+      type: {class: BossCurveConsideration, ns: , asm: BossFightDemo}
+      data:
+        input: 3
+        multiplier:
+          serializedVersion: 2
+          m_Curve:
+          - serializedVersion: 3
+            time: 6
+            value: 0.35
+            inSlope: 0
+            outSlope: 0.054166663
+            tangentMode: 69
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          - serializedVersion: 3
+            time: 18
+            value: 1
+            inSlope: 0.054166663
+            outSlope: 0
+            tangentMode: 69
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+    - rid: 2632327692863144054
+      type: {class: BossCurveConsideration, ns: , asm: BossFightDemo}
+      data:
+        input: 3
+        multiplier:
+          serializedVersion: 2
+          m_Curve:
+          - serializedVersion: 3
+            time: 6
+            value: 0.35
+            inSlope: 0
+            outSlope: 0.054166663
+            tangentMode: 69
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          - serializedVersion: 3
+            time: 18
+            value: 1
+            inSlope: 0.054166663
+            outSlope: 0
+            tangentMode: 69
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+    - rid: 2632327692863144055
+      type: {class: BossCurveConsideration, ns: , asm: BossFightDemo}
+      data:
+        input: 3
+        multiplier:
+          serializedVersion: 2
+          m_Curve:
+          - serializedVersion: 3
+            time: 6
+            value: 0.35
+            inSlope: 0
+            outSlope: 0.054166663
+            tangentMode: 69
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          - serializedVersion: 3
+            time: 18
+            value: 1
+            inSlope: 0.054166663
+            outSlope: 0
+            tangentMode: 69
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
